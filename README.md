@@ -1,8 +1,8 @@
-# seminario/core/
+# sigeva/api
 Back-end provedor de dados para a aplicação Sistema de Gestão de Eventos Acadêmicos. O **core** foi desenvolvido em _Node.JS_,utilizando _MongoDB_ com os seguintes requisitos:
 
 ![Node](https://img.shields.io/badge/Node.js-v7.0.0-green.svg)
-![NPM](https://img.shields.io/badge/npm-v2.15.9-blue.svg)
+![NPM](https://img.shields.io/badge/npm-v3.10.8-blue.svg)
 ![Express](https://img.shields.io/badge/Express-v4.14.0-lightgrey.svg)
 ![MongoDB](https://img.shields.io/badge/MongoDB-v3.2.9-green.svg)
 ![Python](https://img.shields.io/badge/Python-v2.7-green.svg)
@@ -16,9 +16,9 @@ Baixe o diretório ccsa-ufrn/seminario.
 ```
 # git clone https://github.com/ccsa-ufrn/seminario.git app
 ```
-Mova-se para o diretório '/core' e instale as dependências com NPM
+Mova-se para o diretório '/sigeva-api' e instale as dependências com NPM
 ```
-# cd /app/core
+# cd /path/to/sigeva-api
 # npm install
 ```
 Por fim, pode inicializar o serviço:
@@ -35,7 +35,7 @@ Para detalhes com relação a todos os recursos e suas queries disponíveis na a
 ## Config file
 :construction:
 
-## Testing
+## Testando
 Para testar, apenas rode:
 ```
 npm start test // Inicia o servidor em modo desenvolvimento
