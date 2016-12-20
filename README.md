@@ -1,5 +1,5 @@
 # sigeva/api
-Back-end provedor de dados para a aplicação Sistema de Gestão de Eventos Acadêmicos. O **core** foi desenvolvido em _Node.JS_,utilizando _MongoDB_ com os seguintes requisitos:
+API provedor de dados para a aplicação Sistema de Gestão de Eventos Acadêmicos.
 
 ![Node](https://img.shields.io/badge/Node.js-v7.0.0-green.svg)
 ![NPM](https://img.shields.io/badge/npm-v3.10.8-blue.svg)
@@ -7,14 +7,14 @@ Back-end provedor de dados para a aplicação Sistema de Gestão de Eventos Acad
 ![MongoDB](https://img.shields.io/badge/MongoDB-v3.2.9-green.svg)
 ![Python](https://img.shields.io/badge/Python-v2.7-green.svg)
 
-## Instalação Rápida
+## Instalação
 Antes de iniciar realmente a instalação do 'core', é necessário que uma versão
 do **Python 2.7** esteja instalada na máquina que vai rodar o programa, pois
 a biblioteca para a geração e verificação de hashs em **bcrypt** depende do Python.
 
 Baixe o diretório ccsa-ufrn/seminario.
 ```
-# git clone https://github.com/ccsa-ufrn/seminario.git app
+# git clone https://github.com/ccsa-ufrn/sigeva-api.git
 ```
 Mova-se para o diretório '/sigeva-api' e instale as dependências com NPM
 ```
