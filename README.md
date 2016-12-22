@@ -1,8 +1,8 @@
-# seminario/core/
-Back-end provedor de dados para a aplicação Sistema de Gestão de Eventos Acadêmicos. O **core** foi desenvolvido em _Node.JS_,utilizando _MongoDB_ com os seguintes requisitos:
+# sigeva - api
+Backend provedor de dados para a aplicação Sistema de Gestão de Eventos Acadêmicos. O **core** foi desenvolvido em _Node.JS_,utilizando _MongoDB_ com os seguintes requisitos:
 
 ![Node](https://img.shields.io/badge/Node.js-v7.0.0-green.svg)
-![NPM](https://img.shields.io/badge/npm-v2.15.9-blue.svg)
+![NPM](https://img.shields.io/badge/npm-v3.10.3-blue.svg)
 ![Express](https://img.shields.io/badge/Express-v4.14.0-lightgrey.svg)
 ![MongoDB](https://img.shields.io/badge/MongoDB-v3.2.9-green.svg)
 ![Python](https://img.shields.io/badge/Python-v2.7-green.svg)
@@ -12,13 +12,13 @@ Antes de iniciar realmente a instalação do 'core', é necessário que uma vers
 do **Python 2.7** esteja instalada na máquina que vai rodar o programa, pois
 a biblioteca para a geração e verificação de hashs em **bcrypt** depende do Python.
 
-Baixe o diretório ccsa-ufrn/seminario.
+Baixe o diretório ccsa-ufrn/sigeva-api.
 ```
-# git clone https://github.com/ccsa-ufrn/seminario.git app
+# git clone https://github.com/ccsa-ufrn/sigeva-api.git
 ```
-Mova-se para o diretório '/core' e instale as dependências com NPM
+Mova-se para o diretório '/sigeva-api' e instale as dependências com NPM
 ```
-# cd /app/core
+# cd /sigeva-api
 # npm install
 ```
 Por fim, pode inicializar o serviço:
@@ -27,13 +27,22 @@ Por fim, pode inicializar o serviço:
 ```
 Se nenhum erro for mostrado a instalação foi realizada com sucesso.
 
-## Arquitetura
-![](http://i.imgur.com/qGy03Xq.png)
+## Api
+Para acessar a documentação completa da API do sigeva, [clique aqui](docs/README.md).
 
-Para detalhes com relação a todos os recursos e suas queries disponíveis na api, [clique aqui](https://github.com/ccsa-ufrn/seminario/tree/master/core/docs).
-
-## Config file
-:construction:
+## Arquivo de Configuração
+```javascript
+{
+    APP_NAME: "Sistema de Gestão de Eventos Acadêmicos", // Nome da aplicação
+    SERVER_PORT: 3000, // Porta para iniciar o servidor express
+    MONGO_DB_PRODUCTION: "mongodb://host/database", // Banco de dados de produção
+    MONGO_DB_DEV: "mongodb://host/database_dev", // Banco de dados de desenvolvimento
+    MONGO_DB_TEST: "mongodb://host/database_test", // Banco de dados de teste
+    JWT_KEY: "secret_key", // Chave privada do JSON Web Token 
+    HOST: "http://host:3000", // ?
+    INTERNAL_HOSTS: ['host:port'] // ?
+}
+```
 
 ## Testing
 Para testar, apenas rode:
@@ -42,7 +51,7 @@ npm start test // Inicia o servidor em modo desenvolvimento
 npm run test
 ```
 
-## Deployment
+## Em produção
 O Sistema de Gestão de Eventos Acadêmicos utiliza o serviço PM2 da Keymetrics como gerenciador de processos Node.JS. ([Conheça aqui](http://pm2.keymetrics.io/)).
 
 Em modo de produção, um único script é utilizado para fazer deploy e monitoramento de toda aplicação (core). Para fazer deploy somente do core, execute os seguintes passos (com pm2 instalado):
