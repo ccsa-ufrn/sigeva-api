@@ -1,13 +1,21 @@
+<<<<<<< HEAD
 # sigeva - api
 Backend provedor de dados para a aplicação Sistema de Gestão de Eventos Acadêmicos. O **core** foi desenvolvido em _Node.JS_,utilizando _MongoDB_ com os seguintes requisitos:
 
 ![Node](https://img.shields.io/badge/Node.js-v7.0.0-green.svg)
 ![NPM](https://img.shields.io/badge/npm-v3.10.3-blue.svg)
+=======
+# sigeva/api
+API provedor de dados para a aplicação Sistema de Gestão de Eventos Acadêmicos.
+
+![Node](https://img.shields.io/badge/Node.js-v7.0.0-green.svg)
+![NPM](https://img.shields.io/badge/npm-v3.10.8-blue.svg)
+>>>>>>> ef20afa0416cebbd90bfb842f772c5917c5505d2
 ![Express](https://img.shields.io/badge/Express-v4.14.0-lightgrey.svg)
 ![MongoDB](https://img.shields.io/badge/MongoDB-v3.2.9-green.svg)
 ![Python](https://img.shields.io/badge/Python-v2.7-green.svg)
 
-## Instalação Rápida
+## Instalação
 Antes de iniciar realmente a instalação do 'core', é necessário que uma versão
 do **Python 2.7** esteja instalada na máquina que vai rodar o programa, pois
 a biblioteca para a geração e verificação de hashs em **bcrypt** depende do Python.
@@ -18,7 +26,11 @@ Baixe o diretório ccsa-ufrn/sigeva-api.
 ```
 Mova-se para o diretório '/sigeva-api' e instale as dependências com NPM
 ```
+<<<<<<< HEAD
 # cd /sigeva-api
+=======
+# cd /path/to/sigeva-api
+>>>>>>> ef20afa0416cebbd90bfb842f772c5917c5505d2
 # npm install
 ```
 Por fim, pode inicializar o serviço:
@@ -44,7 +56,7 @@ Para acessar a documentação completa da API do sigeva, [clique aqui](docs/READ
 }
 ```
 
-## Testing
+## Testando
 Para testar, apenas rode:
 ```
 npm start test // Inicia o servidor em modo desenvolvimento
