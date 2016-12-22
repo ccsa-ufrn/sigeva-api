@@ -1,4 +1,4 @@
-# CORE - API
+# sigeva-api / documentação
 
 O projeto é composto de **rotas públicas**, **rotas privadas**, **rotas mescladas** e **rotas internas**. 
 As **rotas públicas** não necessitam de autenticação via [JWT](https://jwt.io/). 

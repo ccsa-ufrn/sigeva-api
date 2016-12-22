@@ -8,14 +8,13 @@ API provedor de dados para a aplicação Sistema de Gestão de Eventos Acadêmic
 ![Python](https://img.shields.io/badge/Python-v2.7-green.svg)
 
 ## Instalação
-Antes de iniciar realmente a instalação do 'core', é necessário que uma versão
+Antes de iniciar realmente a instalação do 'sigeva-api', é necessário que uma versão
 do **Python 2.7** esteja instalada na máquina que vai rodar o programa, pois
 a biblioteca para a geração e verificação de hashs em **bcrypt** depende do Python.
 
 Baixe o diretório ccsa-ufrn/sigeva-api.
 ```
 # git clone https://github.com/ccsa-ufrn/sigeva-api.git
-```
 Mova-se para o diretório '/sigeva-api' e instale as dependências com NPM
 ```
 
