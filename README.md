@@ -75,3 +75,4 @@ O resultado será parecido com este:
  - [Protocolo HTTP](https://tools.ietf.org/html/rfc7231#section-4.3)
  - [Frisbyjs to test rest api](http://frisbyjs.com/docs/api/)
  - [Upload Files - Angular 2](http://stackoverflow.com/questions/40214772/file-upload-in-angular-2)
+ - [testing API](https://scotch.io/tutorials/test-a-node-restful-api-with-mocha-and-chai)
